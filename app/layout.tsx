@@ -35,7 +35,7 @@ export default function RootLayout({
             </nav>
           </header>
 
-          <main className="flex m-h-screen flex-col container mt-4">
+          <main className="flex m-h-screen flex-col container mt-4 justify-center items-center">
             <h2 className="text-xl md:text-2xl font-bold">Pokemon Finder</h2>
             {children}
           </main>

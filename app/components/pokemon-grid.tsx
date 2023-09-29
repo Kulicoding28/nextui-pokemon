@@ -21,18 +21,16 @@ export function PokemonGrid({ pokemonList }: PokemonGridProps) {
 
   return (
     <>
-      <div>
-        <h3 className="text-md py-8 font-mono">Search Your Pokemon Name</h3>
-        <Input
-          className="max-w-sm md:max-w-md"
-          type="text"
-          value={searchText}
-          label="Pokemon Name"
-          placeholder="Pikachu,Charizard etc"
-          color="secondary"
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-      </div>
+      <h3 className="text-md py-8 font-mono">Search Your Pokemon Name</h3>
+      <Input
+        className="max-w-sm md:max-w-md"
+        type="text"
+        value={searchText}
+        label="Pokemon Name"
+        placeholder="Pikachu,Charizard etc"
+        color="secondary"
+        onChange={(e) => setSearchText(e.target.value)}
+      />
 
       <div className="mt-8 grid lg:grid-cols-4 gap-4">
         {filteredPokemonList.map((pokemon: any) => {

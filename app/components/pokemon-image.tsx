@@ -1,14 +1,6 @@
 "use client";
 import Image from "next/image";
-import {
-  Card,
-  Divider,
-  CardBody,
-  CardFooter,
-  CardHeader,
-} from "@nextui-org/react";
-
-import { Progress } from "@nextui-org/react";
+import { Card, Divider, CardBody, CardHeader } from "@nextui-org/react";
 
 export function PokemonImage({
   image,
@@ -21,7 +13,7 @@ export function PokemonImage({
 }) {
   return (
     <div>
-      <Card className="max-w-[400px]">
+      <Card>
         <CardHeader className="flex gap-3">
           <h1 className="text-2xl font-semibold font-mono">{name}</h1>
         </CardHeader>
@@ -37,9 +29,7 @@ export function PokemonImage({
           />
         </CardBody>
         <Divider />
-        <CardFooter>
-          <h3 className="font-mono font-medium">Weight: {weight}</h3>
-        </CardFooter>
+        <h3 className="font-mono font-medium p-2">Weight: {weight}</h3>
       </Card>
     </div>
   );

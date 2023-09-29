@@ -1,7 +1,6 @@
 import {
   Card,
   CardHeader,
-  CardBody,
   CardFooter,
   Divider,
   Link,
@@ -30,14 +29,8 @@ export default function PokemonCard({ name }: { name: string }) {
           </div>
         </CardHeader>
         <Divider />
-        <CardBody>
-          <CardBody className="overflow-visible py-2">
-            <p>Find Your Pokemon</p>
-          </CardBody>
-        </CardBody>
-        <Divider />
         <CardFooter>
-          <Link href={name} key={name + "Card"}>
+          <Link href={name} key={name + "Card"} target="_blank">
             <Button
               radius="full"
               color="success"
