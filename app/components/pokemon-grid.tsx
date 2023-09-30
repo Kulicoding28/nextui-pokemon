@@ -8,9 +8,8 @@ interface PokemonGridProps {
   pokemonList: any;
 }
 
-export function PokemonGrid({ pokemonList }: PokemonGridProps) {
+export default function PokemonGrid({ pokemonList }: PokemonGridProps) {
   const [searchText, setSearchText] = useState("");
-
   const searchFilter = (pokemonList: any) => {
     return pokemonList.filter((pokemon: any) =>
       pokemon.name.toLowerCase().includes(searchText.toLowerCase())
@@ -34,7 +33,11 @@ export function PokemonGrid({ pokemonList }: PokemonGridProps) {
 
       <div className="mt-8 grid lg:grid-cols-4 gap-4">
         {filteredPokemonList.map((pokemon: any) => {
-          return <PokemonCard name={pokemon.name} />;
+          return (
+            <div key={pokemon.name}>
+              <PokemonCard name={pokemon.name} />
+            </div>
+          );
         })}
       </div>
     </>

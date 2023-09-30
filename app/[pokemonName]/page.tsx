@@ -1,6 +1,7 @@
-import { PokemonImage } from "../components/pokemon-image";
-import { PokemonStatus } from "../components/pokemon-status";
-import { getPokemon } from "../lib/pokemonAPI";
+import PokemonImage from "@/app/components/pokemon-image";
+import PokemonStatus from "@/app/components/pokemon-status";
+
+import { getPokemon } from "@/app/lib/pokemonAPI";
 
 export default async function PokemonPage({
   params,

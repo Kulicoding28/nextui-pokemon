@@ -18,7 +18,8 @@ export default function PokemonCard({ name }: { name: string }) {
             alt="pokemon "
             height={40}
             radius="sm"
-            src="/pokeball.png"
+            src="/pokeball.png
+            "
             width={40}
           />
           <div className="flex flex-col">
@@ -30,7 +31,7 @@ export default function PokemonCard({ name }: { name: string }) {
         </CardHeader>
         <Divider />
         <CardFooter>
-          <Link href={name} key={name + "Card"} target="_blank">
+          <Link href={name} key={name + "Card"}>
             <Button
               radius="full"
               color="success"

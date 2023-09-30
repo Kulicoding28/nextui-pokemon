@@ -2,7 +2,7 @@
 
 import { CardFooter, Progress, Divider, Card } from "@nextui-org/react";
 
-export function PokemonStatus({
+export default function PokemonStatus({
   value,
   label,
 }: {

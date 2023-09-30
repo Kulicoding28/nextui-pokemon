@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, Divider, CardBody, CardHeader } from "@nextui-org/react";
 
-export function PokemonImage({
+export default function PokemonImage({
   image,
   name,
   weight,
